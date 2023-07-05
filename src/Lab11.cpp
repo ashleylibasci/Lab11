@@ -59,7 +59,11 @@ void loop()
       display.setTextSize(1);
       display.setTextColor(WHITE);
       display.setCursor(0, 0);
-      display.println(sample.x, sample.y, sample.z);
+      display.println(sample.x);
+      display.setCursor(30, 0);
+      display.println(sample.y);
+      display.setCursor(60, 0);
+      display.println(sample.z);
       display.display();
       Serial.printlnf("%d,%d,%d", sample.x, sample.y, sample.z);
     }

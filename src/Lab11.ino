@@ -51,12 +51,10 @@ void loop()
       display.setTextSize(1);
       display.setTextColor(WHITE);
       display.setCursor(0, 0);
-      display.println("%d,%d,%d");
-      display.setCursor(0, 15);
       display.println(sample.x);
-      display.setCursor(30, 15);
+      display.setCursor(30, 0);
       display.println(sample.y);
-      display.setCursor(60, 15);
+      display.setCursor(60, 0);
       display.println(sample.z);
       display.display();
       Serial.printlnf("%d,%d,%d", sample.x, sample.y, sample.z);
